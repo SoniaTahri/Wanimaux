@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <!-- fontAwesome link -->
+    <script src="https://kit.fontawesome.com/e595bb7ca1.js" crossorigin="anonymous"></script>
+    <!-- link bootstrap CSS -->
+
+ 
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="sweetalert2.all.min.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <link href="css/bootstrap5-dropdown-ml-hack-hover.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style0.css">
+    <link rel="stylesheet" href="css/flickity.css" media="screen">
+    <link rel="stylesheet" href="css/ionicons.min.css">
+	  <link rel="stylesheet" href="css/flaticon.css">
+
+    <script src='js/script.js'></script>
+
+
+    <title>Admin</title>
+</head>
+<body>
+
+  <header class="container-fluid" >
+    <nav class="navbar navbar-expand-lg navbar-light my-3">  <!--fixed-top-->
+      <div class="container-fluid">
+        <a href="home.html"><img src="images/wanimauxLogo.png" class="mx-5" style="width: 170px;" alt=""></a>
+        <button class="navbar-toggler me-5" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse row" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-lg-0 col-7 dropdown-hover-all">
+            <li class="nav-item ms-4">
+              <a class="nav-link" href="home.html">Accueil</a>
+            </li>
+            <li class="nav-item ms-4">
+              <a class="nav-link" href="superAdmin.html">Dashbord</a>
+            </li>
+            <li class="nav-item ms-4">
+              <a class="nav-link" href="addAnimalsProducts.html">Ajouter produits/Animaux</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav me-auto mb-lg-0 col-4 dropdown-hover-all" id="headerId" >
+          </ul>
+        </div>            
+      </div>
+      <script>
+        setHeader()
+      </script>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  
+		<div class="container-fluid p-5" style="text-align: center;">
+					<h1>Dashbord</h1>
+    </div>
+
+	<!--================Contact Area =================-->
+	<section class="contact_area section_gap_bottom mb-5">
+		<div class="container">
+			<h2>Users Dashbord</h2>
+				<ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="admins-tab" data-bs-toggle="tab" data-bs-target="#admins" type="button" role="tab" aria-controls="admins" aria-selected="true">Admins</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="users-tab" data-bs-toggle="tab" data-bs-target="#users" type="button" role="tab" aria-controls="users" aria-selected="true">Users</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="messages-tab" data-bs-toggle="tab" data-bs-target="#messages" type="button" role="tab" aria-controls="messages" aria-selected="true">Messages</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="consultations-tab" data-bs-toggle="tab" data-bs-target="#consultations" type="button" role="tab" aria-controls="consultations" aria-selected="true">Consultations</button>
+            </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+
+          <div class="tab-pane fade show active" id="admins" role="tabpanel" aria-labelledby="admins-tab">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="table-wrap">
+                   <div id="adminsTable">
+                    <script>
+                        displayAdmins();
+                    </script>
+                   </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-pane fade" id="users" role="tabpanel" aria-labelledby="users-tab">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="table-wrap">
+                  <div id="usersTable">
+                      <script>
+                          displayUsers();
+                      </script>
+                  </div>
+                </div>
+              </div>
+            </div>  
+          </div>
+
+          <div class="tab-pane fade" id="messages" role="tabpanel" aria-labelledby="messages">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="table-wrap">
+                  <div id="msgTable">
+                      <script>
+                          displayMessages();
+                      </script>
+                  </div>
+                </div>
+              </div>
+            </div>     
+        </div>
+
+        <div class="tab-pane fade " id="consultations" role="tabpanel" aria-labelledby="consultations">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="table-wrap">
+                 <div id="cnsltTable">
+                  <script>
+                      displayConsultations();
+                  </script>
+                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+		</div>
+	</section>
+
+  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close d-flex align-items-center justify-content-center" data-dismiss="modal" aria-label="Close">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+        <div id="answerCnslt"></div>
+        <div id="answerMsg"></div>
+        <div id="modifProduct"></div>
+      </div>
+    </div>
+  </div>
+	<!--================Contact Area =================-->
+
+  <!--================Contact Area =================-->
+	<section class="contact_area section_gap_bottom mt-5">
+		<div class="container">
+      <h2>Animalerie Dashbord</h2>
+      <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="products-tab" data-bs-toggle="tab" data-bs-target="#products" type="button" role="tab" aria-controls="products" aria-selected="false">Produits</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="animaux-tab" data-bs-toggle="tab" data-bs-target="#animaux" type="button" role="tab" aria-controls="products" aria-selected="false">Animaux</button>
+        </li>
+      </ul>
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active" id="products" role="tabpanel" aria-labelledby="products-tab">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="table-wrap">
+                  <div id="productsTable">
+                      <script>
+                          displayproducts()
+                      </script>
+                  </div>
+              </div>
+            </div>
+          </div>  
+          </div>
+          <div class="tab-pane fade" id="animaux" role="tabpanel" aria-labelledby="animaux-tab">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="table-wrap">
+                  <div id="animalsTable">
+                      <script>
+                          displayTableauAnimal()
+                      </script>
+                  </div>
+              </div>
+            </div>
+          </div>  
+          </div>
+        </div>
+			</div>
+		</div>
+	</section>
+	<!--================Contact Area =================-->
+
+
+  <br><br>
+    <footer>
+    <!-- footer -->
+    <div class="footer">
+      <div class="container">
+          <div class="row">
+              <div class="col-12">
+                  <div class="line"></div>
+                  <div class="second2">
+                      <a href="https://codepen.io/AndreeaBunget" target="_blank"> <i class="fab fa-codepen fa-2x margin"></i></a>
+                      <a href="https://github.com/WebDeveloperCodeRep" target="_blank"> <i class="fab fa-github fa-2x margin"></i></a>
+                      <a href="https://www.linkedin.com/in/andreea-mihaela-bunget-a4248812b/" target="_blank"> <i class="fab fa-linkedin fa-2x margin"></i></a>
+                      <a href="https://www.youtube.com/channel/UCX674BUbomzBCakbb75lhfA?view_as=subscriber" target="_blank"><i class="fab fa-youtube fa-2x margin" ></i></a>
+
+                  </div>
+
+              </div>
+          </div>
+        </div>
+     </div>
+    </footer> 
+ 
+<script src="node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+<script src="js/bootstrap5-dropdown-ml-hack.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/flickity.pkgd.min.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/popper.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

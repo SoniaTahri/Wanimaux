@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+    <!-- fontAwesome link -->
+    <script src="https://kit.fontawesome.com/e595bb7ca1.js" crossorigin="anonymous"></script>
+    <!-- link bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+    <title>Admin</title>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light border-bottom" style="height: 80px; background-color: #c2dac5;">
+    <div class="container-fluid">
+    <a class="navbar" href="index-admin.html"><img src="images/wanimauxLogo.png"  style="width: 170px;" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mt-2 mt-lg-0" id="headerId" style="font-weight: bold;">
+            </ul>
+        </div>
+    </div>
+    <script>
+        setHeader()
+      </script>
+  </nav>
+      <br><br>
+
+     
+    <div class="container">
+    <div class="tab-content" id="myTabContent">
+        <div class="col-lg-12">
+            <div class="row form contact_form justify-content-around">
+                <!-- <h3>Ajouter Produits</h3> -->
+                <div class="col-md-4 ">
+                    <div class="form-group mb-2">
+                        <input type="text" class="form-control" id="productType" name="productType" placeholder="Entrer le classment de produit">
+                    </div>
+                    <div>
+                        <span id="productTypeError"></span>
+                    </div>
+                    <div class="form-group mb-2">
+                        <input type="text" class="form-control" id="productName" name="productName" placeholder="Entrer le nom de produit">
+                    </div>
+                    <div>
+                        <span id="productNameError"></span>
+                    </div>
+                    <div class="form-group mb-2">
+                        <input type="number" class="form-control" id="productPrice" name="productPrice" placeholder="Entrer le prix de produit">
+                    </div>
+                    <div>
+                        <span id="productPriceError"></span>
+                    </div>
+                    <div class="form-group mb-2">
+                        <input type="number" class="form-control" id="productStock" name="productStock" placeholder="Entrer le stock">
+                    </div>
+                    <div>
+                        <span id="productStockError"></span>
+                    </div>
+                    <div class="form-group mb-2">
+                        <input type="text" class="form-control" id="productCategorie" name="productCategorie" placeholder="Entrer le catégorie de produit">
+                    </div>
+                    <div>
+                        <span id="productCategorieError"></span>
+                    </div>
+                    <div>
+                        <span id="productError"></span>
+                    </div>
+                    <div class="form-group mb-2">
+                        <label> <i class="fa fa-image"></i> Choisir le produit
+                        <input type="file" id="image" name="image" style="display: none;"></label>
+                    </div>
+                    <div>
+                        <span id="productImageError"></span>
+                    </div>
+                    <div class="bd-exemple" style="text-align: center;">
+                        <button type="submit" value="submit" style="width: 100%;" class="primary-btn" onclick="products()">Ajouter</button>
+                    </div>    
+                </div>
+
+                <div class="col-md-4 ">
+                  <div class="form-group mb-2">
+                      <input type="text" class="form-control" id="animalType" name="animalType" placeholder="Entrer le classment de l animal">
+                  </div>
+                  <div>
+                      <span id="animalTypeError"></span>
+                  </div>
+                  <div class="form-group mb-2">
+                      <label> <i class="fa fa-image"></i> Choisir
+                      <input type="file" id="images" name="images" style="display: none;"></label>
+                  </div>
+                  <div>
+                      <span id="productImagesError"></span>
+                  </div>
+                  <div class="bd-exemple" style="text-align: center;">
+                      <button type="submit" value="submit" style="width: 100%;" class="primary-btn" onclick="addAnimal()">Ajouter </button>
+                  </div>    
+                </div>
+                </div>
+            </div>
+    </div>
+    </div>
+  
+    <br><br><br>
+
+ 
+    <footer>
+    <!-- footer -->
+    <div class="footer">
+      <div class="container">
+          <div class="row">
+              <div class="col-12">
+                  <div class="second2">
+                      <a href="https://codepen.io/AndreeaBunget" target="_blank"> <i class="fab fa-codepen fa-2x margin"></i></a>
+                      <a href="https://github.com/WebDeveloperCodeRep" target="_blank"> <i class="fab fa-github fa-2x margin"></i></a>
+                      <a href="https://www.linkedin.com/in/andreea-mihaela-bunget-a4248812b/" target="_blank"> <i class="fab fa-linkedin fa-2x margin"></i></a>
+                      <a href="https://www.youtube.com/channel/UCX674BUbomzBCakbb75lhfA?view_as=subscriber" target="_blank"><i class="fab fa-youtube fa-2x margin" ></i></a>
+
+                  </div>
+
+              </div>
+          </div>
+        </div>
+     </div>
+    </footer>
+
+ <script src="js/bootstrap.js"></script>
+
+
+</body>
+</html>

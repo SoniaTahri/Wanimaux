@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <!-- fontAwesome link -->
+    <script src="https://kit.fontawesome.com/e595bb7ca1.js" crossorigin="anonymous"></script>
+    <!-- link bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
+
+    <link href="css/bootstrap5-dropdown-ml-hack-hover.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/flickity.css" media="screen">
+
+    <title>Wanimaux</title>
+</head>
+<body >
+
+  <header >
+    <nav class="navbar navbar-expand-lg navbar-light my-3"> 
+      <div class="container-fluid">
+        <a href="home.html"><img src="images/wanimauxLogo.png" class="mx-5" style="width: 170px;" alt=""></a>
+        <button class="navbar-toggler me-5" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse row" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-lg-0 col-9 dropdown-hover-all">
+            <li class="dropdown nav-item ms-4">
+              <a class="nav-link" href="home.html" id="dropdownMenuButton222" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Nos produits</a>
+            
+            </li>
+            <li class="nav-item ms-4">
+              <a class="nav-link" href="#nos-marques">Marques</a>
+            </li>
+            <li class="nav-item ms-4">
+              <a class="nav-link" href="#nos-services">Nos services</a>
+            </li>
+            <li class="nav-item ms-4">
+              <a class="nav-link" href="#contact-nos">Contact</a>
+            </li>
+            <li class="nav-item ms-4">
+              <a class="nav-link" href="#" class="my-cart d-flex" title="Aller au panier">Panier</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav me-auto mb-lg-0 col-3 dropdown-hover-all">
+            <li class="nav-item ms-4">
+              <a class="nav-link" aria-current="page" href="SeConnecter.html" title="Se Connecter">Se Connecter</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+    <section id="loginSec0"> 
+      <div class="row">
+        <div class=" col-md-6 "> 
+        <div class="form login_form" id="loginForm">
+          <h6 class="infoPers" style="font-weight: bold;font-size: 30px;">Je me connecter</h6>
+            <div>
+              <span id="connexionError"></span>
+            </div>
+            <div class="mb-3">
+            <label for="Email" class="form-label">* Votre adresse E-mail</label>
+                <div class="input-container">
+                <input type="email" class="form-control" id="email" placeholder="" >
+                </div>
+                <div>
+                  <span id="emailError"></span>
+                </div>
+                <div>
+                  <span id="emailError1"></span>
+                </div>
+            </div>
+            <div class="mb-3">
+            <label for="Password" class="form-label">* Votre mot de passe</label>
+                <div class="input-container">
+                <input type="password" class="form-control" id="password" placeholder="">
+                </div>
+                <div>
+                  <span id="passwordError"></span>
+                </div>
+                </div>
+            <button type="submit" class="btn btn-primary" onclick="seConnecter()">Me connecter</button><br><br>
+            <span>* Pas si vite, ces champs sont obligatoires</span><br>
+            <span>vous n'avez pas encore de compte? <a href="inscriptionUser.html" style="text-decoration: none;">Faisons connaissance :) </a> </span> 
+          </div>
+        </div>
+          <div class="col-md-5">
+            <img src="images/products/catt.png" style="width: 100%;" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="text-center mt-5">Nous sélectionnons le meilleur pour vous </h2>
+    
+     </section>
+    
+     <div class="container mt-5 mb-3" id="nos-services">
+      <div class="row">
+        <div class="col-12 text-center">
+            <h2 class="h1">Notre engagement</h2>
+            <p class="px-3 py-4 text-grey font-family-primary-light">
+                Si nous affirmons être la marque d’affection, c’est parce que nous mettons tout notre cœur
+                à vous proposer ce qu’il y a de meilleur pour le bien-être de vos animaux de compagnie.
+            </p>
+            <hr>
+        </div>
+      </div>
+      <div class="row">
+          <div class="col-md-4">
+              <div class="card p-3 mb-2">
+                  <div class="d-flex justify-content-between mt-4">
+                      <div class="d-flex flex-row align-items-center">
+                          <div class="icon"><i class="fas fa-comment-medical" ></i></div>
+                          <div class="ms-3 c-details">
+                              <h6 class="mb-0">Conseils vétérinaires</h6>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="mt-3">
+                      <h3 class="heading">Les vétérinaires de Wanimaux à votre écoute. Ce service est ouvert à tous !</h3>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="card p-3 mb-2">
+                  <div class="d-flex justify-content-between mt-4">
+                      <div class="d-flex flex-row align-items-center">
+                          <div class="icon"><i class="far fa-comments"></i></div>
+                          <div class="ms-3 c-details">
+                              <h6 class="mb-0">Toujours là pou vous</h6>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="mt-3">
+                      <h3 class="heading">Parce que votre confiance et votre fidélité sont nos priorités, Wanimaux s'engage pour vous !</h3>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="card p-3 mb-2">
+                  <div class="d-flex justify-content-between mt-4">
+                      <div class="d-flex flex-row align-items-center">
+                          <div class="icon"><i class="fas fa-gifts"></i></div>
+                          <div class="ms-3 c-details">
+                              <h6 class="mb-0">Livraison à domicile</h6>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="mt-3">
+                      <h3 class="heading">Chez vous ou en relais en 48h</h3>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
+    
+    
+    <section id="nos-marques">
+      <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
+          <img src="images/marques/almonature.PNG" alt="">
+          <img src="images/marques/carnilove.PNG" alt="">
+          <img src="images/marques/exo-terra.PNG" alt="">
+          <img src="images/marques/feliway.PNG" alt="">
+          <img src="images/marques/hamiform.PNG" alt="">
+          <img src="images/marques/hils.PNG" alt="">
+          <img src="images/marques/kong.PNG" alt="">
+          <img src="images/marques/ownat.PNG" alt="">
+          <img src="images/marques/royal canin.PNG" alt="">
+          <img src="images/marques/testethewild.PNG" alt="">
+          <img src="images/marques/tetra.PNG" alt="">
+          <img src="images/marques/verser.PNG" alt="">
+      </div>
+    </section>
+    
+     <br><br>
+     <footer  id="contact-nos">
+      <!-- footer -->
+      <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-xs-12">
+                    <div class="first">
+                      <h6>Un conseil sur un produit ? Une question ?</h6>                     
+                    <div class="line"></div><br>
+                    <div class="span4 footer-mid ">
+                      <div class="pull-left">
+                          Contactez-nous au <a href="https://www.auberdog.com/faq" title="Nous contacter" rel="nofollow" style="text-decoration: none;  color: white;"><div class="h4 mt5" style="font-size: 15px;" ><i class="fa fa-phone"></i> 02 43 39 23 21</div></a>
+                      </div>
+                      <div class=" email-footer  pull-left ml20">
+                          Ou par email sur <a href="mailto:info@wanimaux.com" rel="nofollow" style="text-decoration: none; font-size: 10px; color: white;"><div class="h4 mt5" style="font-size: 15px;" ><i class="fa fa-envelope"></i> info@wanimaux.com</div></a>
+                      </div>
+                  </div>
+                    </div> 
+                  </div>  
+                <div class="col-md-4 col-xs-12">
+                  <div class="second">
+                      <h6> Contact</h6>
+                      <!-- <form class="contact1-form validate-form">
+                        <div class="wrap-input1 validate-input" data-validate = "Name is required">
+                          <input class="input1" type="text" name="name" placeholder="Name">
+                          <span class="shadow-input1"></span>
+                        </div>
+                
+                        <div class="wrap-input1 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+                          <input class="input1" type="text" name="email" placeholder="Email">
+                          <span class="shadow-input1"></span>
+                        </div>
+                
+                        <div class="wrap-input1 validate-input" data-validate = "Subject is required">
+                          <input class="input1" type="text" name="subject" placeholder="Subject">
+                          <span class="shadow-input1"></span>
+                        </div>
+                
+                        <div class="wrap-input1 validate-input" data-validate = "Message is required">
+                          <textarea class="input1" name="message" placeholder="Message"></textarea>
+                          <span class="shadow-input1"></span>
+                        </div>
+                
+                        <div class="container-contact1-form-btn">
+                          <button class="contact1-form-btn">
+                            <span>
+                              Send Email
+                              <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                            </span>
+                          </button>
+                        </div>
+                      </form> -->
+                
+                  </div>
+              </div>
+                <div class="col-md-4 col-xs-12">
+                    <div class="third">
+                      <h6>Rejoignez la communauté Wanimaux !</h6>
+                      <ul>
+                          <div class="line"></div>
+                          <div class="second2 d-flex justify-content-center">
+                              <a href="https://codepen.io/AndreeaBunget" target="_blank"> <i class="fab fa-codepen fa-2x margin"></i></a>
+                              <a href="https://github.com/WebDeveloperCodeRep" target="_blank"> <i class="fab fa-github fa-2x margin"></i></a>
+                              <a href="https://www.linkedin.com/in/andreea-mihaela-bunget-a4248812b/" target="_blank"> <i class="fab fa-linkedin fa-2x margin"></i></a>
+                              <a href="https://www.youtube.com/channel/UCX674BUbomzBCakbb75lhfA?view_as=subscriber" target="_blank"><i class="fab fa-youtube fa-2x margin" ></i></a>
+          
+                          </div>
+          
+                        </ul>
+                    </div>
+                </div>
+    
+               
+            </div>
+        </div>
+    
+       </div>
+    </footer>
+    
+     <script src="node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+     <script src="js/bootstrap5-dropdown-ml-hack.js"></script>
+     <script src="js/bootstrap.js"></script>
+     <script src='js/script.js'></script>
+     <script src="js/flickity.pkgd.min.js"></script>
+      
+    </body>
+    </html>

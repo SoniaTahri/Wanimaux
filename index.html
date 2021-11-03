@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <!-- fontAwesome link -->
+    <script src="https://kit.fontawesome.com/e595bb7ca1.js" crossorigin="anonymous"></script>
+    <!-- link bootstrap CSS -->
+
+ 
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="sweetalert2.all.min.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <link href="css/bootstrap5-dropdown-ml-hack-hover.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/flickity.css" media="screen">
+    <link rel="stylesheet" href="css/ionicons.min.css">
+	  <link rel="stylesheet" href="css/flaticon.css">
+
+    <script src='js/script.js'></script>
+    <title>Wanimaux</title>
+</head>
+<body>
+
+  <header class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-light my-3"> 
+      <div class="container-fluid">
+        <a href="index.html"><img src="images/wanimauxLogo.png" class="ms-3" style="width: 170px;" alt=""></a>
+        <button class="navbar-toggler me-5" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse row" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-lg-0 col-md-9 dropdown-hover-all">
+            <li class="dropdown nav-item ms-4">
+              <a class="nav-link" href="#nos-produits">Nos produits</a>
+            </li>
+            <li class="nav-item ms-4">
+              <a class="nav-link" href="#nos-marques">Marques</a>
+            </li>
+            <li class="nav-item ms-4">
+              <a class="nav-link" href="#nos-services">Nos services</a>
+            </li>
+            <li class="nav-item ms-4">
+              <a class="nav-link" href="#contact-nos">Contact</a>
+            </li>
+            <li class="nav-item ms-4">
+              <a class="nav-link" href="panier.html" class="my-cart d-flex" title="Aller au panier" >Panier <span id="orderNbr" class="ti-bag" style="font-size: smaller; color: blue;"></span></a>
+            </li>
+            <li class="nav-item ms-4" ><a class="nav-link" href="conseilsVeto.html"> Messagerie <span id="" class="ti-bag" style="font-size: smaller; color: blue;">1</span></a></li>
+          </ul>
+          <ul class="navbar-nav me-auto mb-lg-0 col-md-3 dropdown-hover-all" id="headerId" >
+          </ul>
+        </div>
+    </div>
+      <script>
+        setHeader()
+        nbOrders()
+      </script>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+<div class="c-wrapper">
+  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="images/Bonacibo-cat-dog.jpg" class="d-block w-100" alt="...">
+        <div class="text"> <blockquote>On peut juger de la grandeur d'une nation par la façon dont les animaux y sont traités.
+        </blockquote><cite class="author">- Gandhi</cite></div>
+      </div>
+      <div class="carousel-item">
+        <img src="images/headerchat.jpg" class="d-block w-100" alt="...">
+        <div class="text"><blockquote>Les Animaux sont nés pour nous apprendre à aimer.</blockquote><cite class="author">- David Banville</cite></div>
+      </div>
+      <div class="carousel-item">
+        <img src="images/headerhumsters.jpg" class="d-block w-100" alt="...">
+        <div class="text"><blockquote>L'Homme est le plus cruel de tous les animaux, il est le seul capable d'infliger une douleur a ses congénères sans autre motif que le plaisir.</blockquote><cite class="author">- Mark Twain</cite></div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div> 
+
+  <section id="nos-produits">  
+    <h2 class="text-center my-5">Retrouvez les univers de tous nos animaux</h2>
+        <div class="row" id="aniamltabe">
+          <script>
+            displayAnimals();
+          </script>
+      </div>
+  </section>
+
+ <div class="container mt-5 mb-3" id="nos-services">
+  <div class="row">
+    <div class="col-12 text-center">
+        <h2 class="h1">Notre engagement</h2>
+        <p class="py-4 px-5" style="font-size: medium;">
+            Si nous affirmons être la marque d’affection, c’est parce que nous mettons tout notre cœur
+            à vous proposer ce qu’il y a de meilleur pour le bien-être de vos animaux de compagnie.
+        </p>
+        <hr>
+    </div>
+  </div>
+  <div class="row">
+        <div class="col-md-4">
+          <div class="card p-3 mb-2">
+                      <div class="c-details">
+                        <i class="fas fa-comment-medical fa-2x" style="color: #718f75;"></i>
+                        <a href="#" data-toggle="modal" data-target="#exampleModalCenter" style="text-decoration: none; color:black;"><h6 class="mt-3" style="color: #718f75;font-weight: bold;">Conseils vétérinaires</h6></a>
+                      </div>
+                <div class="mt-3">
+                  <p>Les vétérinaires de Wanimaux à votre écoute. Ce service est ouvert à tous !</p>
+                </div>
+          </div>
+        </div>
+      <div class="col-md-4">
+          <div class="card p-3 mb-2">
+                      <div class="c-details">
+                        <i class="far fa-comments fa-2x" style="color: #718f75;"></i>
+                        <h6 class="mt-3" style="color: #718f75; font-weight: bold;">Toujours là pou vous</h6>
+                      </div>
+              <div class="mt-2">
+                  <p>Parce que votre confiance et votre fidélité sont nos priorités, Wanimaux s'engage pour vous !</p>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-4">
+          <div class="card p-3 mb-2">
+                      <div class="c-details">
+                        <i class="fas fa-gifts fa-2x" style="color: #718f75;"></i>
+                        <h6 class="mt-3" style="color: #718f75; font-weight: bold;">Livraison à domicile</h6>
+                      </div>
+              <div class="mt-2">
+                  <p>Chez vous ou en relais en 48h</p>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close d-flex align-items-center justify-content-center" data-dismiss="modal" aria-label="Close">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <div class="row no-gutters">
+        <div class="col-md-12 d-flex">
+          <div class="modal-body p-4 p-md-5 d-flex align-items-center color-1">
+            <div class="text w-100 py-3">
+              <h3 class="mb-4 heading" style="text-align: center;">Questions@Véto</h3>
+              <div action="#" class="contact-form">
+                <div class="form-group mb-3">
+                  <input type="text" class="form-control"  placeholder="Votre Nom" style="font-weight: bolder;" id="name">
+                  <span id="nameError"></span>
+                </div>
+                <div class="form-group mb-3">
+                  <input type="text" class="form-control" placeholder="Email" id="email" style="font-weight: bolder;">
+                  <span id="emailError"></span>
+                </div>
+                <div class="form-group mb-3">
+                  <input type="text" class="form-control" placeholder="quelle est votre animal" id="animal" style="font-weight: bolder;">
+                  <span id="animalError"></span>
+                </div>
+                <div class="row form-group">
+                    <div class="col-sm-4">
+                        <div class="input-group">
+                            <input type="number" class="form-control" placeholder="Poids en Kg" required="" value="" name="poids_patient_question" aria-required="true" id="poid" style="font-weight: bolder;">
+                            <span id="poidError"></span>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <div class="input-group">
+                            <input type="number" class="form-control" placeholder="Taille en Cm ex: 1.8m = 180cm" required="" value="" name="taille_patient_question" aria-required="true" id="taille" style="font-weight: bolder;">
+                            <span id="tailleError"></span>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="input-group">
+                            <input type="number" class="form-control" placeholder="Age en ans " required="" value="" name="age_patient_question" aria-required="true" id="age" style="font-weight: bolder;">
+                            <span id="ageError"></span>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Les antécédents médicaux de votre animal" id="antecedents" style="font-weight: bolder;">
+                  <span id="antecedentsError"></span>
+
+                </div>
+                <br>
+                <div class="form-group">
+                  <textarea name="" id="question" cols="30" rows="4" class="form-control" placeholder="Votre Question" style="font-weight: bolder;"></textarea>
+                  <span id="questionError"></span>
+                </div>
+                <div class="form-group">
+                  <button type="submit" class="form-control btn btn-secondary rounded submit px-3" onclick="sendConsultations()">Envoyer la consultation</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section id="nos-marques">
+  <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
+      <img src="images/marques/almonature.PNG" alt="">
+      <img src="images/marques/carnilove.PNG" alt="">
+      <img src="images/marques/exo-terra.PNG" alt="">
+      <img src="images/marques/feliway.PNG" alt="">
+      <img src="images/marques/hamiform.PNG" alt="">
+      <img src="images/marques/hils.PNG" alt="">
+      <img src="images/marques/kong.PNG" alt="">
+      <img src="images/marques/ownat.PNG" alt="">
+      <img src="images/marques/royal canin.PNG" alt="">
+      <img src="images/marques/testethewild.PNG" alt="">
+      <img src="images/marques/tetra.PNG" alt="">
+      <img src="images/marques/verser.PNG" alt="">
+  </div>
+</section>
+
+ <br><br>
+ <footer id="contact-nos">
+  <!-- footer -->
+  <div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-xs-12">
+                <div class="first">
+                    <h6>Un conseil sur un produit ? Une question ?</h6>                     
+                      <div class="line"></div><br>
+                      <div class="span4 footer-mid ">
+                        <div class="pull-left">
+                            Contactez-nous au <a href="https://www.auberdog.com/faq" title="Nous contacter" rel="nofollow" style="text-decoration: none;  color: white;"><div class="h4 mt5" style="font-size: 15px;" ><i class="fa fa-phone"></i> 216 99 929 754</div></a>
+                        </div>
+                        <div class=" email-footer  pull-left ml20">
+                            Ou par email sur <a href="mailto:info@wanimaux.com" rel="nofollow" style="text-decoration: none; font-size: 10px; color: white;"><div class="h4 mt5" style="font-size: 15px;" ><i class="fa fa-envelope"></i> info@wanimaux.com</div></a>
+                        </div>
+                      </div> 
+                      <h6 class="mt-5">Rejoignez la communauté Wanimaux !</h6>
+                      <div class="line"></div>
+                      <div class="second2 d-flex justify-content-center">
+                          <a href="https://codepen.io/AndreeaBunget" target="_blank"> <i class="fab fa-facebook fa-2x margin"></i></a>
+                          <a href="https://codepen.io/AndreeaBunget" target="_blank"> <i class="fab fa-instagram fa-2x margin"></i></a>
+                          <a href="https://codepen.io/AndreeaBunget" target="_blank"> <i class="fab fa-whatsapp fa-2x margin"></i></a>
+                          <a href="https://www.youtube.com/channel/UCX674BUbomzBCakbb75lhfA?view_as=subscriber" target="_blank"><i class="fab fa-youtube fa-2x margin" ></i></a>
+                      </div> 
+                </div> 
+              </div>  
+            <div class="col-md-4 col-xs-12">
+              <div class="second">
+                  <h6> Contact</h6>
+                  <div class="container">
+                    <div class="form">
+                      <div class="row">
+                        <div class="col-100">
+                          <input type="text" id="Name" name="firstname" placeholder="Votre nom..">
+                          <span id="NameError"></span>
+                        </div>                       
+                      </div>
+                      <div class="row">
+                          <div class="col-100">
+                            <input type="email" id="Email" name="email" placeholder="Votre email..">
+                            <span id="EmailError"></span>
+                          </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-100">
+                          <input type="text" id="subject" name="subject" placeholder="Sujet...">
+                          <span id="subjectError"></span>
+                        </div>                       
+                      </div>
+                      <div class="row">
+                        <div class="col-100">
+                          <textarea id="message" name="message" placeholder="Message.." style="height:150px"></textarea>
+                          <span id="messageError"></span>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-100">
+                        <input type="submit" value="Submit" onclick="sendMessage()">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+          </div>
+            <div class="col-md-4 col-xs-12">
+                <div class="third">
+                  <h6>Où nous trouver ?</h6>
+                  <ul>
+                      <div class="line"></div>
+                      <div class="second2 d-flex justify-content-center">
+                        <div id="map"></div>
+                        <script>
+                          function initMap() {
+                            var uluru = {lat: 55.004599, lng: -1.620807};
+                            var map = new google.maps.Map(document.getElementById('map'), {
+                              zoom: 15,
+                              center: uluru
+                            });
+                            var marker = new google.maps.Marker({
+                              position: uluru,
+                              map: map
+                            });
+                          }
+                        </script>
+                        <script async defer
+                        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD5aFB_JQmDIc-mBHKtZ7UfUKGQNJ-V_rc&callback=initMap">
+                        </script>
+                      </div>
+                    </ul>
+                </div>
+            </div>
+
+           
+        </div>
+    </div>
+
+   </div>
+</footer>
+
+<script src="node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+<script src="js/bootstrap5-dropdown-ml-hack.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/flickity.pkgd.min.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/popper.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
